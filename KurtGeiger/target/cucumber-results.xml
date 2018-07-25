@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="12.410216">
+<testcase classname="Search And Assert A Brand and add an item to the cart" name="search for a brand and assert results" time="7.442131">
+<failure message="org.junit.ComparisonFailure: expected:&lt;https://www.[kurtgeiger.es]/&gt; but was:&lt;https://www.[rightmove.co.uk]/&gt;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#10;&#9;at com.KG.Support.ElementUtils.assertURL(ElementUtils.java:55)&#10;&#9;at com.KG.Pages.DashBoardPageKG.assetDashBoardPage(DashBoardPageKG.java:10)&#10;&#9;at com.KG.StepDefs.KG_SearchAndAssertABrand_And_AddItemToCart_stepDef.iAmOnTheHomepage(KG_SearchAndAssertABrand_And_AddItemToCart_stepDef.java:10)&#10;&#9;at ✽.Given I am on the homepage(com.KG.Features/KG_SearchAndAssertABrand_And_AddItemToCart.feature:4)&#10;"><![CDATA[Given I am on the homepage..................................................failed
+When I select brand category from the header................................skipped
+Then I should see the list of brands........................................skipped
+And I select "DOLCE & GABBANA" brand from the list..........................skipped
+Then I should see the list of products from "DOLCE & GABBANA"...............skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<https://www.[kurtgeiger.es]/> but was:<https://www.[rightmove.co.uk]/>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.KG.Support.ElementUtils.assertURL(ElementUtils.java:55)
+	at com.KG.Pages.DashBoardPageKG.assetDashBoardPage(DashBoardPageKG.java:10)
+	at com.KG.StepDefs.KG_SearchAndAssertABrand_And_AddItemToCart_stepDef.iAmOnTheHomepage(KG_SearchAndAssertABrand_And_AddItemToCart_stepDef.java:10)
+	at ✽.Given I am on the homepage(com.KG.Features/KG_SearchAndAssertABrand_And_AddItemToCart.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Search And Assert A Brand and add an item to the cart" name="add an item to the check out and assert" time="4.968085">
+<failure message="org.junit.ComparisonFailure: expected:&lt;https://www.[kurtgeiger.es]/&gt; but was:&lt;https://www.[rightmove.co.uk]/&gt;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#10;&#9;at com.KG.Support.ElementUtils.assertURL(ElementUtils.java:55)&#10;&#9;at com.KG.Pages.DashBoardPageKG.assetDashBoardPage(DashBoardPageKG.java:10)&#10;&#9;at com.KG.StepDefs.KG_SearchAndAssertABrand_And_AddItemToCart_stepDef.iSelectMenCategoryFromTheHeader(KG_SearchAndAssertABrand_And_AddItemToCart_stepDef.java:40)&#10;&#9;at ✽.Given I select men category from the header(com.KG.Features/KG_SearchAndAssertABrand_And_AddItemToCart.feature:11)&#10;"><![CDATA[Given I select men category from the header.................................failed
+And I am on PDP.............................................................skipped
+When I select any colour and size for the chosen men category...............skipped
+And I add the product to the bag............................................skipped
+Then I can see the bag with single item.....................................skipped
+And I click 'Proceed to Checkout'...........................................skipped
+Then I should be on checkout page...........................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<https://www.[kurtgeiger.es]/> but was:<https://www.[rightmove.co.uk]/>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.KG.Support.ElementUtils.assertURL(ElementUtils.java:55)
+	at com.KG.Pages.DashBoardPageKG.assetDashBoardPage(DashBoardPageKG.java:10)
+	at com.KG.StepDefs.KG_SearchAndAssertABrand_And_AddItemToCart_stepDef.iSelectMenCategoryFromTheHeader(KG_SearchAndAssertABrand_And_AddItemToCart_stepDef.java:40)
+	at ✽.Given I select men category from the header(com.KG.Features/KG_SearchAndAssertABrand_And_AddItemToCart.feature:11)
+]]></failure>
+</testcase>
+</testsuite>
