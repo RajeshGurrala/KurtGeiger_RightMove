@@ -25,7 +25,7 @@ II) test has 1) JAVA and 2) Resources
 
 1) has Step definitions to the featureFiles. RunnerTest (the main trigger to fire up the tests) lies here. Tests could be
 cherry picked based on the tags provided in the RunnerTest class.
-2) Resources has feature files and config.properties file.
+2) Resources has feature files and config.properties file. KurtGeiger feature starts with the KG and the RightMove feature starts with te word RightMove
 
 REPORT GENERATION
 extant reports are generated under the output directory that lies on the top of the src. upon test execution a .html file is created
